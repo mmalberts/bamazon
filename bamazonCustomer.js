@@ -32,7 +32,7 @@ connection.connect(function(err) {
 
 //function to display all available items
 function displayItems() {
-	console.log("\n***WELCOME TO BAMAZON***\n");
+	console.log("\nWelcome, Customer!");
 	console.log("\nItems available: \n");
 	connection.query("SELECT * FROM products", function(err, res) {
 		if (err) throw err;
@@ -104,7 +104,7 @@ function promptCustomer() {
 					}
 				);
 			};
-			// quantityCheck();
+			// quantityCheck();ß
 			connection.end();
 		});
 	});
@@ -120,3 +120,4 @@ function quantityCheck() {
 	})
 };
 
+module.exports = bamazonCustomer.js;

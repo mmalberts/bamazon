@@ -32,8 +32,17 @@ insert into products (product_name, department_name, price, stock_quantity)
 	("winter hat", "clothing", 25.00, 300), 
 	("bench", "furniture", 430.00, 50), 
 	("dog food", "pets", 15.00, 200), 
-	("vitamins", "health and beauty", 8.00, 400), 
+	("vitamins", "health and beauty", 8.00, 400),
 	("striped socks", "clothing", 3.00, 500), 
 	("camping tent", "outdoor gear", 75.00, 200), 
 	("warm blanket", "home", 30.00, 300), 
 	("hiking boots", "clothing", 50.00, 300);
+
+-- * * * C R E A T I N G  S U P E R V I S O R  T A B L E * * *
+
+create table departments (
+	department_id int not null auto_increment,
+	department_name varchar(50) not null,
+	over_head_costs decimal(10,2) not null,
+	primary key (department_id);
+);
