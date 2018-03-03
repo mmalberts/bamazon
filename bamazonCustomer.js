@@ -12,6 +12,9 @@
 		// this means updating SQL database to reflect quantity
 		// once the order goes through, show customer the total cost of their purchase
 
+// * * * FOR SUPERVISOR VIEW * * *
+// each purchase should add total cost to new product_sales column in products table (table must be modified first)
+
 var mysql = require("mysql");
 var inquirer = require("inquirer");
 
@@ -104,7 +107,7 @@ function promptCustomer() {
 					}
 				);
 			};
-			// quantityCheck();ß
+			// quantityCheck();
 			connection.end();
 		});
 	});
@@ -119,5 +122,3 @@ function quantityCheck() {
 		}
 	})
 };
-
-module.exports = bamazonCustomer.js;
