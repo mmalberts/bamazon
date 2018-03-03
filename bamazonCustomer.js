@@ -81,7 +81,6 @@ function promptCustomer() {
 			// console.log(chosenItem.product_name); //for debugging
 			if (chosenItem.stock_quantity < chosenQuant) {
 				console.log("\nWe do not have enough of this item in stock.\n");
-				connection.end();
 			}
 			else {
 				var totalCost = chosenItem.price * chosenQuant;
