@@ -1,4 +1,4 @@
-* * * W E L C O M E   T O   B A M A Z O N * * *
+WELCOME TO BAMAZON
 
 * This is a command-line application that mimicks the functionality of an Amazon-like online store.
 * Please remember to install your package.json, including inquirer and mysql.
